@@ -6,7 +6,7 @@
 /*   By: pratanaa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 11:03:21 by pratanaa          #+#    #+#             */
-/*   Updated: 2022/11/15 12:43:41 by pratanaa         ###   ########.fr       */
+/*   Updated: 2022/11/16 17:58:55 by pratanaa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,3 @@ int	ft_printf(const char *str, ...)
 	va_end(arguments);
 	return (length);
 }
-

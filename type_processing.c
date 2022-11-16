@@ -6,7 +6,7 @@
 /*   By: pratanaa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 14:35:24 by pratanaa          #+#    #+#             */
-/*   Updated: 2022/11/15 12:47:37 by pratanaa         ###   ########.fr       */
+/*   Updated: 2022/11/16 17:59:12 by pratanaa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	c_type(va_list arguments, int *length)
 {
-	char c;
+	char	c;
 
 	c = va_arg(arguments, int);
 	ft_putchar_wl(c, length);
