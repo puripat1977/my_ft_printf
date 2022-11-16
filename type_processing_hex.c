@@ -6,7 +6,7 @@
 /*   By: pratanaa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 14:48:44 by pratanaa          #+#    #+#             */
-/*   Updated: 2022/11/15 12:48:52 by pratanaa         ###   ########.fr       */
+/*   Updated: 2022/11/16 17:34:13 by pratanaa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,18 @@ void	p_type(va_list arguments, int *length, char *str)
 	unsigned long	address;
 
 	address = va_arg(arguments, unsigned long);
-	ft_putchar_wl('0', length);
-	ft_putchar_wl('x', length);
-	ft_puthex_wl(address, length, str);
+	if (address == 0)
+	{
+		ft_putchar_wl('(', length);
+		ft_putchar_wl('n', length);
+		ft_putchar_wl('i', length);
+		ft_putchar_wl('l', length);
+		ft_putchar_wl(')', length);
+	}
+	else
+	{
+		ft_putchar_wl('0', length);
+		ft_putchar_wl('x', length);
+		ft_puthex_wl(address, length, str);
+	}
 }
